@@ -258,3 +258,14 @@
     cursor: pointer;
   }
 }
+
+@layer footer {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background-color: var(--dark-background);
+    color: var(--header-logo-text);
+  }
+}
