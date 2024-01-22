@@ -153,3 +153,35 @@
     line-height: 150px;
   }
 }
+
+@layer second__section {
+  section.second__section h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--information-text);
+  }
+
+  section.second__section .card__wrapper {
+    padding: 5% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  section.second__section .card__wrapper .card .image__container {
+    height: 125px;
+    width: 125px;
+    border: 2px solid var(--button-color);
+    border-radius: 10px;
+  }
+
+  section.second__section .card__wrapper .card .text__content {
+    max-width: 125px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--placeholder-image);
+    padding-top: 5px;
+  }
+}
