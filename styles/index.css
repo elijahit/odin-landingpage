@@ -185,3 +185,24 @@
     padding-top: 5px;
   }
 }
+
+@layer third__section {
+  section.third__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 15%;
+    background-color: var(--quote-background);
+    font-size: 36px;
+    font-style: italic;
+    color: var(--quote-text);
+  }
+
+  section.third__section .text__copyright {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
+  }
+
+}
