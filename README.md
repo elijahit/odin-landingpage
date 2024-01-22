@@ -1,3 +1,3 @@
 # The Odin Project - Landing Page (Flexbox Layout)
 
-WIP
+- RESPONSIVE NOT SUPPORT (MIN WIDTH 768px)
