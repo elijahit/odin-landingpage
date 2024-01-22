@@ -69,7 +69,7 @@
   header {
     display: flex;
     background-color: var(--dark-background);
-    padding: 20px 10%;
+    padding: 20px 15vw;
     align-items: center;
   }
 
@@ -108,7 +108,7 @@
   }
 
   section .content__left {
-    padding-left: 10%;
+    padding-left: 15vw;
   }
 
   section .content__left h1 {
@@ -142,7 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 10%;
+    padding-right: 15vw;
   }
 
   section .content__right .image__container {
@@ -165,8 +165,9 @@
   }
 
   section.second__section .card__wrapper {
-    padding: 5% 10% 0 10%;
+    padding: 5% 15vw 0;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
     padding-bottom: 80px;
   }
@@ -193,7 +194,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10% 15%;
+    padding: 10% 15vw;
     background-color: var(--quote-background);
     font-size: 36px;
     font-style: italic;
@@ -213,12 +214,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8% 10%;
+    padding: 8% 15vw;
   }
 
   section.four__section .call__wrapper {
     background-color: var(--button-color);
-    padding: 5% 15%;
+    padding: 35px 50px;
     border-radius: 10px;
     color: var(--header-logo-text);
     display: flex;
