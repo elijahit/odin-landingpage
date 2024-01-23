@@ -132,7 +132,7 @@
 
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
 
     header div.mobile__only,
     header .mobile {
@@ -169,7 +169,54 @@
 }
 
 @layer first__section {
-  @media screen and (min-width: 900px) {
+
+  @media screen and (max-width: 768px) {
+    section.first__section {
+      padding: 20px 0 20px 0;
+      background-color: var(--dark-background);
+    }
+
+    section .content__left h1 {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      color: var(--hero-main-text);
+      font-size: 32px;
+    }
+
+    section .content__left p {
+      width: 80%;
+      margin: 10px auto;
+      color: var(--hero-secondary-text);
+    }
+
+    section .content__left .sign__up {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--button-color);
+      padding: 9px 20px;
+      border-radius: 5px;
+      border: 0;
+      color: var(--header-logo-text);
+      margin-bottom: 10px;
+      
+    }
+
+    section .content__right .image__container {
+      margin: 0 auto;
+      height: 150px;
+      width: 250px;
+      background-color: var(--placeholder-image);
+      color: var(--header-logo-text);
+      text-align: center;
+      line-height: 150px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
 
     section.first__section {
       padding: 70px 0;
@@ -233,7 +280,7 @@
 }
 
 @layer second__section {
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
     section.second__section h2 {
       padding-top: 25px;
       text-align: center;
@@ -268,7 +315,7 @@
 }
 
 @layer third__section {
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
     section.third__section {
       display: flex;
       justify-content: center;
@@ -290,7 +337,7 @@
 }
 
 @layer four__section {
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
 
     section.four__section {
       display: flex;
@@ -344,7 +391,7 @@
 }
 
 @layer footer {
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
 
     footer {
       display: flex;
