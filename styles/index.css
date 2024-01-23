@@ -215,6 +215,13 @@
       border-bottom-left-radius: 20px;
       border-top-right-radius: 20px;
     }
+
+    section .content__left .sign__up:active {
+      background-color: var(--button-color-hover);
+      scale: 1.1;
+      transition: all .1s ease-in-out;
+      cursor: pointer;
+    }
   }
 
   @media screen and (min-width: 769px) {
@@ -406,6 +413,57 @@
 }
 
 @layer four__section {
+  @media screen and (max-width: 768px) {
+    section.four__section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8% 15vw;
+    }
+
+    section.four__section .call__wrapper {
+      background-color: var(--button-color);
+      padding: 35px 20px;
+      border-radius: 10px;
+      color: var(--header-logo-text);
+      display: flex;
+      flex-direction: column;
+    }
+
+    section.four__section .call__wrapper .text__content h1 {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+    
+    section.four__section .call__wrapper .text__content p {
+      font-size: 14px;
+      color: var(--quote-background);
+      padding-bottom: 5px;
+    }
+
+    section.four__section .call__wrapper .sign__up {
+      flex: 1;
+      align-self: center;
+      margin: 0 auto;
+      background-color: transparent;
+      border: 1px solid var(--header-logo-text);
+      border-radius: 5px;
+      padding: 5px 30px;
+      color: var(--header-logo-text);
+    }
+
+    section.four__section .call__wrapper .sign__up:active {
+      background-color: var(--header-logo-text);
+      color: var(--dark-background);
+      border: 1px solid var(--dark-background);
+      transform: scale(1.1);
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+    }
+  }
+
   @media screen and (min-width: 769px) {
 
     section.four__section {
