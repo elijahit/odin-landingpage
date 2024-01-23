@@ -50,6 +50,11 @@
     box-sizing: border-box;
   }
 
+  a {
+    text-decoration: none;
+    color: var(--header-logo-text);
+  }
+
   :root {
     --dark-background: #1F2937;
     --hero-main-text: #F9FAF8;
@@ -66,31 +71,98 @@
 
 
 @layer header {
+
+  @media screen and (max-width: 768px) {
+    header .header__wrapper {
+      background-color: var(--dark-background);
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    header .desktop {
+      display: none;
+    }
+
+    header div.mobile__only img {
+      width: 36px;
+      height: auto;
+      margin-right: 10px;
+      transition: 0.4s;
+    }
+
+    header .logo {
+      margin-left: 20px;
+      margin-right: auto;
+    }
+
+    header nav.mobile {
+      width: 200px;
+      min-height: 100vh;
+      position: fixed;
+      border-top-left-radius: 5px;
+      top: 0;
+      right: -200px;
+      background-color: #767676e9;
+      transition: 1s;
+    }
+
+    header nav.mobile.show__mobile {
+      display: block;
+      right: 0;
+      transition: 1s;
+    }
+
+    header div.mobile__only.show__mobile img {
+      opacity: 0;
+      transition: 0.4s;
+    } 
+
+    header nav.mobile img {
+      position: relative;
+      right: -160px;
+      top: 10px;
+    }
+
+    header nav.mobile ul li {
+      margin: 10px 0 0 20px;
+    }
+
+  }
+
   @media screen and (min-width: 900px) {
-    header {
+
+    header div.mobile__only,
+    header .mobile {
+      display: none;
+    }
+
+    header .header__wrapper {
       display: flex;
       background-color: var(--dark-background);
       padding: 20px 15vw;
       align-items: center;
     }
 
-    header, 
-    header a {
+    header .header__wrapper, 
+    header .header__wrapper a {
       color: var(--header-logo-text);
       text-decoration: none;
     }
 
-    header .logo {
+    header .header__wrapper .logo {
       margin-right: auto;
       font-size: 24px;
     }
 
-    header nav ul {
+    header .header__wrapper nav.desktop ul {
       display: flex;
       gap: 16px;
     }
 
-    header nav ul li a:hover {
+    header .header__wrapper nav.desktop ul li a:hover {
       color: var(--button-color);
     }
   }

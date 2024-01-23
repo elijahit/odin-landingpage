@@ -7,14 +7,29 @@
 
   <link rel="stylesheet" href="styles/index.css" />
 
+  <script src="./scripts/hamburger.js" defer></script>
+
 </head>
 <body>
   <!-- HEADER START -->
   <header>
-    <div class="logo" aria-label="Logo sito">
-      <a href="./index.html">Header Logo</a>
+    <div class="header__wrapper">
+      <div class="logo" aria-label="Logo sito">
+        <a href="./index.html">Header Logo</a>
+      </div>
+      <div class="mobile__only" aria-label="navigazione principale" aria-pressed="false">
+        <img src="./images/hamburger.svg" alt="Menu Principale" />
+      </div>
+      <nav class="desktop" aria-label="principale">
+        <ul>
+          <li><a href="#">header link one</a></li>
+          <li><a href="#">header link two</a></li>
+          <li><a href="#">header link three</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav aria-label="principale">
+    <nav class="mobile" aria-label="principale">
+      <img src="./images/closeHamburger.svg" alt="Chiudi menu">
       <ul>
         <li><a href="#">header link one</a></li>
         <li><a href="#">header link two</a></li>
