@@ -107,6 +107,7 @@
       right: -200px;
       background-color: #767676e9;
       transition: 1s;
+      z-index: 1;
     }
 
     header nav.mobile.show__mobile {
