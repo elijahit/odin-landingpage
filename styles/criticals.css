@@ -95,12 +95,6 @@
       transition: 0.4s;
     }
 
-    header button.mobile__only:focus,
-    header nav.mobile .close__menu:focus {
-      border: 1px solid var(--header-logo-text);
-      border-radius: 5px;
-    }
-
     header .logo {
       margin-left: 20px;
       margin-right: auto;
