@@ -89,11 +89,16 @@
       display: none;
     }
 
-    header div.mobile__only img {
+    header button.mobile__only img {
       width: 36px;
       height: auto;
-      margin-right: 10px;
       transition: 0.4s;
+    }
+
+    header button.mobile__only:focus,
+    header nav.mobile .close__menu:focus {
+      border: 1px solid var(--header-logo-text);
+      border-radius: 5px;
     }
 
     header .logo {
@@ -114,17 +119,38 @@
       z-index: 1;
     }
 
+    header nav.mobile .close__menu {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    header button.mobile__only {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      margin-right: 10px;
+    }
+
     header nav.mobile.show__mobile {
       right: 0;
       transition: 1s;
     }
 
-    header div.mobile__only.show__mobile img {
+    header button.mobile__only.show__mobile {
       opacity: 0;
       transition: 0.4s;
     } 
 
-    header nav.mobile img {
+    header nav.mobile .close__menu {
       position: relative;
       right: -160px;
       top: 10px;
@@ -138,7 +164,7 @@
 
   @media screen and (min-width: 769px) {
 
-    header div.mobile__only,
+    header button.mobile__only,
     header .mobile {
       display: none;
     }
