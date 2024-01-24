@@ -20,8 +20,8 @@ document.write(`\
       </button>\
       <nav class="desktop" aria-label="principale">\
         <ul>\
-          <li><a href="#">header link one</a></li>\
-          <li><a href="#">header link two</a></li>\
+          <li><a href="${baseUrl}/pages/servizi.html">Servizi</a></li>\
+          <li><a href="${baseUrl}/pages/chi-siamo.html">Chi siamo</a></li>\
           <li><a href="${baseUrl}/pages/contact.html">Contact</a></li>\
         </ul>\
       </nav>\
@@ -31,9 +31,9 @@ document.write(`\
         <img src="${baseUrl}/images/closeHamburger.svg" alt="Chiudi menu">\
       </button>\
       <ul>\
-        <li><a href="#">header link one</a></li>\
-        <li><a href="#">header link two</a></li>\
-        <li><a href="${baseUrl}/pages/contact.html">Contact</a></li>\
+      <li><a href="${baseUrl}/pages/servizi.html">Servizi</a></li>\
+      <li><a href="${baseUrl}/pages/chi-siamo.html">Chi siamo</a></li>\
+      <li><a href="${baseUrl}/pages/contact.html">Contact</a></li>\
       </ul>\
     </nav>\
   </header>\
