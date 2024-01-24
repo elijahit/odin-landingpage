@@ -105,6 +105,7 @@
       width: 200px;
       min-height: 100vh;
       position: fixed;
+      display: none;
       border-top-left-radius: 5px;
       top: 0;
       right: -200px;
@@ -114,7 +115,6 @@
     }
 
     header nav.mobile.show__mobile {
-      display: block;
       right: 0;
       transition: 1s;
     }

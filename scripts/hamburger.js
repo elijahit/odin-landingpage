@@ -7,13 +7,17 @@ hamburgerMenu.addEventListener('click', openMenu);
 hamburgerMenuClose.addEventListener('click', closeMenu);
 
 function openMenu () {
-  navList.classList.add('show__mobile');
-  hamburgerMenu.classList.add('show__mobile');
+  navList.style.display = "block";
+  setTimeout(() => {
+    navList.classList.add('show__mobile');
+    hamburgerMenu.classList.add('show__mobile');
+  }, 100);
 }
 
 function closeMenu () {
   navList.classList.remove('show__mobile');
   setTimeout(() => {
     hamburgerMenu.classList.remove('show__mobile');
+    navList.style.display = "none";
   }, 600)
 }
