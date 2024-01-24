@@ -26,6 +26,9 @@
     display: block;
   }
   body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     line-height: 1;
   }
   ol, ul {
@@ -172,6 +175,7 @@
 @layer footer {
   @media screen and (max-width: 768px) {
     footer {
+      margin-top: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -185,6 +189,7 @@
   @media screen and (min-width: 769px) {
 
     footer {
+      margin-top: auto;
       display: flex;
       justify-content: center;
       align-items: center;
