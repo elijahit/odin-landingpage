@@ -3,6 +3,7 @@
     background-color: var(--button-color);
     padding: 5px 8px;
     border-radius: 10px;
+    display: inline-block;
   }
   
   .active__nav:hover {

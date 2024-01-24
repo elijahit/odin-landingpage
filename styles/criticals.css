@@ -189,6 +189,7 @@
 
     header .header__wrapper nav.desktop ul {
       display: flex;
+      align-items: center;
       gap: 16px;
     }
 
