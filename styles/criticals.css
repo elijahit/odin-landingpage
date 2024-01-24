@@ -168,3 +168,29 @@
     }
   }
 }
+
+@layer footer {
+  @media screen and (max-width: 768px) {
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0;
+      background-color: var(--dark-background);
+      color: var(--header-logo-text);
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0;
+      background-color: var(--dark-background);
+      color: var(--header-logo-text);
+    }
+  }
+}
