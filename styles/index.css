@@ -29,7 +29,7 @@
       padding: 9px 20px;
       border-radius: 5px;
       border: 0;
-      color: var(--header-logo-text);
+      color: var(--sign-up-text);
       margin-bottom: 10px;
       
     }
@@ -39,7 +39,7 @@
       height: 150px;
       width: 250px;
       background-color: var(--placeholder-image);
-      color: var(--header-logo-text);
+      color: var(--white);
       text-align: center;
       line-height: 150px;
       border-bottom-left-radius: 20px;
@@ -88,7 +88,7 @@
       padding: 4px 13px;
       border-radius: 5px;
       border: 0;
-      color: var(--header-logo-text);
+      color: var(--sign-up-text);
       margin: 5px 0 0 0;
     }
 
@@ -110,7 +110,7 @@
       height: 150px;
       width: 350px;
       background-color: var(--placeholder-image);
-      color: var(--header-logo-text);
+      color: var(--white);
       text-align: center;
       line-height: 150px;
     }
@@ -255,7 +255,7 @@
       background-color: var(--button-color);
       padding: 35px 20px;
       border-radius: 10px;
-      color: var(--header-logo-text);
+      color: var(--call-to-action-text);
       display: flex;
       flex-direction: column;
     }
@@ -269,7 +269,7 @@
     
     section.four__section .call__wrapper .text__content p {
       font-size: 14px;
-      color: var(--quote-background);
+      color: var(--call-to-action-text);
       padding-bottom: 5px;
     }
 
@@ -281,7 +281,7 @@
       border: 1px solid var(--header-logo-text);
       border-radius: 5px;
       padding: 5px 30px;
-      color: var(--header-logo-text);
+      color: var(--call-to-action-text);
     }
 
     section.four__section .call__wrapper .sign__up:active {
@@ -307,7 +307,7 @@
       background-color: var(--button-color);
       padding: 35px 50px;
       border-radius: 10px;
-      color: var(--header-logo-text);
+      color: var(--call-to-action-text);
       display: flex;
     }
 
@@ -315,14 +315,14 @@
       flex: 5;
     }
 
-    section.four__section .call__wrapper .text__content h1 {
+    section.four__section .call__wrapper .text__content h4 {
       font-weight: bold;
       font-size: 18px;
     }
     
     section.four__section .call__wrapper .text__content p {
       font-size: 14px;
-      color: var(--quote-background);
+      color: var(--call-to-action-text);
     }
 
     section.four__section .call__wrapper .sign__up {
@@ -333,12 +333,12 @@
       border: 1px solid var(--header-logo-text);
       border-radius: 5px;
       padding: 5px;
-      color: var(--header-logo-text);
+      color: var(--call-to-action-text);
     }
 
     section.four__section .call__wrapper .sign__up:hover {
       background-color: var(--header-logo-text);
-      color: var(--dark-background);
+      color: var(--call-to-action-text);
       border: 1px solid var(--dark-background);
       transform: scale(1.1);
       transition: all 0.1s ease-in-out;
